@@ -1,0 +1,65 @@
+---
+layout: base.njk
+pageTitle: Contact
+navActive: contact
+headGif: contacthead.gif
+permalink: contact.html
+---
+
+<p>&nbsp;</p>
+<p>Send me a message using the form below.</p>
+<p>&nbsp;</p>
+
+<form class="contact-form" id="contact-form">
+
+  <label for="contact-name">Your Name</label>
+  <input type="text" id="contact-name" name="name" required maxlength="100">
+
+  <label for="contact-email">Your Email</label>
+  <input type="email" id="contact-email" name="email" required maxlength="100">
+
+  <label for="contact-subject">Subject</label>
+  <input type="text" id="contact-subject" name="subject" maxlength="100">
+
+  <label for="contact-message">Message</label>
+  <textarea id="contact-message" name="message" required></textarea>
+
+  <!-- honeypot spam trap -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <div class="form-buttons">
+    <button type="submit" class="btn">Send Message</button>
+    <button type="reset" class="btn btn-secondary">Clear</button>
+  </div>
+
+  <p id="form-status"></p>
+
+</form>
+<p>&nbsp;</p>
+
+<script>
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch('https://formspree.io/f/maqpdekw', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        status.textContent = 'Thanks! Your message has been sent.';
+        status.style.color = '#003152';
+        form.reset();
+      } else {
+        status.textContent = 'Oops — there was a problem sending your message. Please try again.';
+        status.style.color = '#a11b0e';
+      }
+    }).catch(function() {
+      status.textContent = 'Oops — there was a problem sending your message. Please try again.';
+      status.style.color = '#a11b0e';
+    });
+  });
+</script>

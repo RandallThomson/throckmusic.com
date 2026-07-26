@@ -1,0 +1,92 @@
+# Content for the Press page box (see src/press.njk). Rebuild after editing
+# (build.bat or `python build.py`).
+#
+# This file uses "compact" spacing (contentSpacing: compact in press.njk):
+# a blank line between lines starts a new paragraph with a normal (small)
+# gap, and a lone {spacer} line on its own inserts extra breathing room
+# between sections, like the ones below. Every entry needs its own blank
+# line above and below it to become its own line on the page.
+# [visible text](url) makes a link, and lines starting with # (like these)
+# are comments and won't appear on the site.
+
+{spacer}
+
+Press clippings from Music Acts past and present
+
+{spacer}
+
+Dreamland Faces
+
+[City Pages - Dec 2008](images/Press/Dreamland-CityPages-12-1-2008.jpg)
+
+[Minnesota Monthly - May 2008](images/Press/Dreamland-MNMonthly-5-1-2008.jpg)
+
+[How Was The Show - Feb 2008](images/Press/Dreamland-HowWasShow-2-8-08.gif)
+
+[City Pages - May 2007](images/Press/Dreamland-CityPages-05-23-2007.gif)
+
+[Avenues - May 2007](images/Press/Dreamland-VaudevilleStagesAvenues-05-31-2007.gif)
+
+[Winona Daily News - Sept 2006](images/Press/Dreamland-WinonaDailyNews-09-29-2006.gif)
+
+[Winona Daily News - Sept 2005](images/Press/Dreamland-WinonaDailyNews-09-17-2005.gif)
+
+{spacer}
+
+Randall Throckmorton
+
+{spacer}
+
+[Pulse TC - Feb 2005](images/Press/Throckmorton-PulseTC-02-02-2005.gif)
+
+[Daily Copper - Jan 2005](images/Press/Throckmorton-DailyCopperMichigan-01-01-2005.gif)
+
+{spacer}
+
+Larmes de Colere
+
+{spacer}
+
+[City Pages &quot;best acoustic performers&quot; - May 2001](images/Press/LDC-CityPages-05-02-2001.gif)
+
+[French Press - Sept 2000](images/Press/LDC-France-09-30-2000.gif)
+
+[Pulse TC - Dec 2000](images/Press/LDC-PulseTC-12-06-2000.gif)
+
+[Pioneer Press - Sept 2000](images/Press/LDC-PioneerPress-09-29-2000.gif)
+
+[City Pages - March 1999](images/Press/LDC-CityPages-03-01-1999.gif)
+
+[Guitar One - May 1998](images/Press/LDC-GuitarOne12-01-1998.gif)
+
+[City Pages - May 1997](images/Press/LDC-CityPages-05-14-1997.gif)
+
+{spacer}
+
+Deadly Nightshade Family Singers
+
+{spacer}
+
+[Western Herald - July 2004](images/Press/DNFS-WesternHerald-07112004.gif)
+
+[JamBands.com - Sept 2001](images/Press/DNFS-Jambands-07-17-2001.gif)
+
+[Minnesota Music Awards - Jan 2001](images/Press/DNFS-MinnesotaMusicAwards-01-01-2001.gif)
+
+[City Pages - Jan 2001](images/Press/DNFS-CiyPages-01-24-2001.gif)
+
+[Pioneer Press - Jan 2001](images/Press/DNFS-PioneerPress-01-24-2001.gif)
+
+[Pioneer Press - Jan 2001](images/Press/DNFS-PioneerPress-01-20-2001.gif)
+
+{spacer}
+
+Other
+
+{spacer}
+
+[Pulse TC (Tulip Sweet reunion) - Sept 2004](images/Press/TulipSweet-PulseTC-09-11-2004.gif)
+
+[French Press (Tulip Sweet Tour) - Jan 2001](images/Press/TulipSweet-FRANCE-10-19-2001.gif)
+
+{spacer}

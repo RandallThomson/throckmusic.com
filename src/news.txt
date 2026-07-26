@@ -1,0 +1,31 @@
+# This file powers the "What's New - Upcoming Events" box on the home page.
+# It is plain text, not HTML. After editing, rebuild the site (build.bat or
+# `python build.py`) to see the changes.
+#
+# SYNTAX:
+# - A blank line between lines starts a new paragraph.
+# - Lines within the same paragraph (no blank line between them) are joined
+#   with a line break, not merged into one line.
+# - Links: [visible text](https://example.com)
+# - Lines starting with # (like these) are comments and are ignored - they
+#   will not appear on the site.
+# - A line containing only {event} placed directly above a paragraph gives
+#   that paragraph the special show/event link style (centered, plain
+#   underline instead of the usual bold link style). Used for show listings.
+# - Plain HTML tags (like <em>...</em>) are allowed and passed through as-is.
+
+Welcome back, folks
+
+For the sake of less social media dependence, I've revived my vintage sheet-music-style site after a long hiatus. A good old fashioned hand-built website. It was designed by [Mark Simonson](https://www.marksimonson.com/) in 2004. Thus my young eyes following you up top.
+
+In other news, I'm thrilled to be a guest vocalist on [Punching the Clown](https://open.spotify.com/prerelease/3nJxbZHFZLwz6lbErIsMPh?flow_ctx=594187a8-28b8-455b-a55f-0674af76e0db%3A1785052145), a true-to-form album from [Lambchop](https://www.lambchop.net/) due out in late August of 2026. You can read more about it [here](https://pitchfork.com/news/lambchop-line-up-tour-and-justin-vernon-assisted-album-punching-the-clown/).
+
+Catch me live with Lambchop at these upcoming shows
+
+[Lambchop - 08/30/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-holiday-special-w-randall-throckmorton-special-guests)
+
+[Lambchop - 09/27/2026  - @Crooners](https://www.croonersmn.com/event/lambchop-season-finale-with-daughter-of-swords-mike2600-special-guests/)
+
+Sincerely,
+
+Randall Throckmorton

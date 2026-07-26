@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=750">
+  <title>{{ pageTitle }} - Randall Throckmorton</title>
+  <link rel="stylesheet" href="css/throckmorton.css">
+  <link rel="stylesheet" href="css/pages.css">
+  {% if headGif %}<style>#well h2 { background: url(images/{{ headGif }}) no-repeat; }</style>{% endif %}
+</head>
+
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+
+<h1><span class="alt">Randall Throckmorton - "Crooning Troubadour"</span></h1>
+
+<div id="nav">
+  <ul id="menu">
+    {%- set navItems = [
+      {"id": "home",    "href": "index.html",   "label": "Home"},
+      {"id": "groups",  "href": "throckmorton-trio.html",  "label": "Throckmorton Trio"},
+      {"id": "photos",  "href": "photos.html",  "label": "Photo Gallery"},
+      {"id": "audio",   "href": "audio.html",   "label": "Audio"},
+      {"id": "movies",  "href": "movies.html",  "label": "Movies"},
+      {"id": "history", "href": "link.html", "label": "Links"},
+      {"id": "contact", "href": "contact.html", "label": "Contact"},
+      {"id": "press",   "href": "press.html",   "label": "Press"},
+      {"id": "bio",     "href": "about.html",   "label": "About"}
+    ] -%}
+    {%- for item in navItems %}
+    <li id="{{ item.id }}{% if navActive == item.id %}On{% endif %}"><a href="{{ item.href }}"><span class="alt">{{ item.label }}</span></a></li>
+    {%- endfor %}
+  </ul>
+</div>
+
+<div id="well">
+  <h2{% if headText %} class="h2Text"{% endif %}>{% if headText %}{{ headText }}{% else %}<span class="alt">{{ pageTitle }}</span>{% endif %}</h2>
+  {{ content | safe }}
+  <div id="mainContentBase"></div>
+</div>
+
+</body>
+</html>

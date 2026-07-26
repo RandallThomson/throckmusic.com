@@ -1,0 +1,16 @@
+# Content for the About page, rendered inside <div class="box"> under the
+# "Randall Throckmorton" heading (see src/about.njk). Rebuild after editing
+# (build.bat or `python build.py`).
+#
+# Same syntax as news.txt: a blank line between lines starts a new
+# paragraph, [visible text](https://example.com) makes a link, and lines
+# starting with # (like these) are comments and won't appear on the site.
+# Plain HTML tags (like <em>...</em>) are passed through as-is.
+
+Randall Throckmorton is a Minnesota-based vocalist, composer, and instrumentalist. His music draws on Tin Pan Alley, early folk traditions, and British psychedelia. His work has a way of carrying you back in time, built around earnestly crooned Victrola-era melodies, evocative chords, and vivid lyrics.
+
+Throckmorton's musical path has run through a wide circle of Twin Cities projects: as an original songwriter for the Deadly Nightshade Family Singers (<em>Krakovia</em>, 1999; <em>Plain Brown Suit</em>, 2001); as a vocalist and banjo ukulele player for Dreamland Faces, including performances for Minnesota Public Radio's Talking Volumes and Vaudevillian Stages; as a longtime crooner with [Le Cirque Rouge Cabaret & Burlesque](https://racketmn.com/burlesque-guide-minneapolis-st-paul); and as a member of the [MinnRoast Players](https://www.minnpost.com/inside-minnpost/2020/01/minnroast-2020/#show) from 2017 through 2020. Randall majored in Music Theory and Composition at the University of Minnesota. As a composer he won the Eric Stokes song contest for his original composition &ldquo;The Grouse,&rdquo; later performed with [Zeitgeist](http://www.zeitgeistnewmusic.org/). Over the years his work has drawn coverage from City Pages, Minnesota Monthly, Pioneer Press, Pulse TC, and Pitchfork.com, among others.
+
+Most recently, he appeared as a guest vocalist throughout [Lambchop's <em>Punching the Clown</em>](https://pitchfork.com/news/lambchop-line-up-tour-and-justin-vernon-assisted-album-punching-the-clown/), and joined the band for a run of Minneapolis shows in support of the record.
+
+Today he fronts [The Throckmorton Trio](throckmorton-trio.html) alongside multi-instrumentalists Christopher Thompson and Tom Wadzinski.

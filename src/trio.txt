@@ -1,0 +1,19 @@
+# Content for the Throckmorton Trio page box (see src/throckmorton-trio.njk).
+# Rebuild after editing (build.bat or `python build.py`).
+#
+# Same syntax as news.txt: a blank line between lines starts a new
+# paragraph, [visible text](https://example.com) makes a link, and lines
+# starting with # (like these) are comments and won't appear on the site.
+# Plain HTML tags (like <img>) are passed through as-is.
+
+The Throckmorton Trio inhabits a strange, beautiful crossroads where Jazz Age parlor songs drift into early British psychedelia. Crooner-composer Randall Throckmorton draws listeners toward the Victrola horn, conjuring Tin Pan Alley melodies, curious lyrics, and the occasional long-lost chord.
+
+His songs move between jaunty and dark, dreamy and intimate, carried by a voice that is both nimble and expressive. He is also known for work with the Deadly Nightshade Family Singers, Dreamland Faces, and Le Cirque Rouge Burlesque.
+
+Multi-instrumentalists Christopher Thompson and Tom Wadzinski shape the trio's sound with their own vocals, adventurous arrangements, deft solos, and finely woven harmonies, creating unexpected textures throughout a driving yet dreamlike repertoire.
+
+Christopher Thompson currently plays bass and piano with Steph Was & The Secret Izz and Tom Wadzinski is a mandolinist with Blue Groove Bluegrass.
+
+The trio blends originals with a wide-ranging selection of covers, from classical art songs and Appalachian ballads to art-rock and torch songs, maintaining a distinctive intimacy centered around Randall's vintage crooning style.
+
+<img src="images/ThrockmortonTrio.jpg" width="420" height="305" alt="The Throckmorton Trio">
