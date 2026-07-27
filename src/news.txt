@@ -13,12 +13,19 @@
 #   that paragraph the special show/event link style (centered, plain
 #   underline instead of the usual bold link style). Used for show listings.
 # - Plain HTML tags (like <em>...</em>) are allowed and passed through as-is.
+# - A line containing only {updated} placed directly above a paragraph gives
+#   it a small, italic "last updated" style. Put it first and update the
+#   date by hand whenever you edit this file, so it always reflects when
+#   you actually made the change.
 
-Welcome back, folks
+{updated}
+Last updated: July 27, 2026
 
-For the sake of less social media dependence, I've revived my vintage sheet-music-style site after a long hiatus. A good old fashioned hand-built website. It was designed by [Mark Simonson](https://www.marksimonson.com/) in 2004. Thus my young eyes following you up top.
+Throckmusic.com is back!
 
-In other news, I'm thrilled to be a guest vocalist on [Punching the Clown](https://open.spotify.com/prerelease/3nJxbZHFZLwz6lbErIsMPh?flow_ctx=594187a8-28b8-455b-a55f-0674af76e0db%3A1785052145), a true-to-form album from [Lambchop](https://www.lambchop.net/) due out in late August of 2026. You can read more about it [here](https://pitchfork.com/news/lambchop-line-up-tour-and-justin-vernon-assisted-album-punching-the-clown/).
+I've revived my vintage sheet-music-style site after many years hiatus. It was designed by [Mark Simonson Studio](https://www.marksimonson.com/) about 20 years ago, thus why it's my younger eyes following you up top.
+
+In other recent news, I've got a lovely [trio](throckmorton-trio.html) going that you can catch around town. I'm also a guest vocalist on much of [Punching the Clown](https://open.spotify.com/prerelease/3nJxbZHFZLwz6lbErIsMPh?flow_ctx=594187a8-28b8-455b-a55f-0674af76e0db%3A1785052145), a brilliant true-to-form album from [Lambchop](https://www.lambchop.net/), due out in late August 2026. You can read more about it [here](https://pitchfork.com/news/lambchop-line-up-tour-and-justin-vernon-assisted-album-punching-the-clown/).
 
 Catch me live with Lambchop at these upcoming shows
 
@@ -26,6 +33,4 @@ Catch me live with Lambchop at these upcoming shows
 
 [Lambchop - 09/27/2026  - @Crooners](https://www.croonersmn.com/event/lambchop-season-finale-with-daughter-of-swords-mike2600-special-guests/)
 
-Sincerely,
-
-Randall Throckmorton
+Sincerely, Randall Throckmorton

@@ -37,6 +37,9 @@ def load_news_txt(path):
         if lines and lines[0].strip() == "{event}":
             css_class = ' class="event"'
             lines = lines[1:]
+        elif lines and lines[0].strip() == "{updated}":
+            css_class = ' class="updated"'
+            lines = lines[1:]
         lines = [convert_links(l) for l in lines]
         paragraphs.append(f"<p{css_class}>" + "<br>".join(lines) + "</p>")
         paragraphs.append('<p class="spacer">&nbsp;</p>')
