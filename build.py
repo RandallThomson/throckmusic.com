@@ -124,6 +124,12 @@ def build():
         shutil.copytree(CSS_SRC_DIR, css_dst, dirs_exist_ok=True)
         print("  copied css/")
 
+    # Copy CNAME (custom domain for GitHub Pages), if present
+    cname_src = os.path.join(BASE_DIR, "CNAME")
+    if os.path.isfile(cname_src):
+        shutil.copy(cname_src, os.path.join(SITE_DIR, "CNAME"))
+        print("  copied CNAME")
+
     # Set up Jinja2 environment pointing at _includes/
     env = Environment(
         loader=FileSystemLoader(INCLUDES_DIR),
