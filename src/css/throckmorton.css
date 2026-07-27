@@ -207,7 +207,7 @@ h1 {
 	background-color: #efc082;
 	}
 #newsScroll {
-	height: 396px;
+	height: 472px;
 	overflow-y: scroll;
 	width: calc(100% - 16px);
 	scrollbar-color: transparent transparent;
@@ -284,18 +284,18 @@ h1 {
 	line-height: 26px;
 	text-shadow: 0 0 4px rgba(237, 158, 74, 0.5);
 	}
-#home a:hover, #groups a:hover, #photos a:hover, #audio a:hover, #movies a:hover,
+#home a:hover, #groups a:hover, #shows a:hover, #photos a:hover, #audio a:hover, #movies a:hover,
 #bio a:hover, #history a:hover, #links a:hover, #contact a:hover,
 #store a:hover, #press a:hover {
 	background: #efc082;
 	color: #002f50;
 	}
-#homeOn, #groupsOn, #photosOn, #audioOn, #moviesOn, #bioOn, #historyOn,
+#homeOn, #groupsOn, #showsOn, #photosOn, #audioOn, #moviesOn, #bioOn, #historyOn,
 #linksOn, #contactOn, #storeOn, #pressOn {
 	top: auto;
 	background: #001f38;
 	}
-#homeOn a, #groupsOn a, #photosOn a, #audioOn a, #moviesOn a, #bioOn a, #historyOn a,
+#homeOn a, #groupsOn a, #showsOn a, #photosOn a, #audioOn a, #moviesOn a, #bioOn a, #historyOn a,
 #linksOn a, #contactOn a, #storeOn a, #pressOn a {
 	color: #f0e4c6;
 	}

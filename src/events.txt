@@ -1,0 +1,21 @@
+# Content for the Shows page box (see src/events.njk). Rebuild after
+# editing (build.bat or `python build.py`).
+#
+# Same syntax as news.txt: a blank line between lines starts a new
+# paragraph, [visible text](https://example.com) makes a link, and lines
+# starting with # (like these) are comments and won't appear on the site.
+#
+# A line containing only {event} placed directly above a paragraph gives
+# that paragraph the special show-listing link style (centered, plain
+# underline). Add new gigs the same way - copy an {event} block below and
+# fill in the details. Newest/soonest show usually goes first.
+
+Catch me live at these upcoming shows
+
+{event}
+[Lambchop - 08/30/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-holiday-special-w-randall-throckmorton-special-guests)
+
+<em>The Throckmorton Trio opens for this show as well!</em>
+
+{event}
+[Lambchop - 09/27/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-season-finale-with-daughter-of-swords-mike2600-special-guests/)

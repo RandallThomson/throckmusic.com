@@ -168,6 +168,12 @@ h1 {
 	border: 1px #333333 solid;
 	margin-top: 18px;
 	}
+#well img.no-border {
+	border: none;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	}
 #well a:link {
 	color: #a11b0e;
 	font-family: 'EB Garamond', serif;
@@ -289,6 +295,20 @@ h1 {
 .contact-form textarea {
 	height: 160px;
 	}
+.contact-form .checkbox-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 10px;
+	}
+.contact-form .checkbox-label input[type="checkbox"] {
+	width: auto;
+	margin: 0;
+	}
+.contact-form .highlight-asterisk {
+	color: #a11b0e;
+	font-weight: bold;
+	}
 .contact-form .captcha-section {
 	margin-top: 10px;
 	padding: 6px;
@@ -368,18 +388,18 @@ h1 {
 	line-height: 26px;
 	text-shadow: 0 0 4px rgba(237, 158, 74, 0.5);
 	}
-#home a:hover, #groups a:hover, #photos a:hover, #audio a:hover, #movies a:hover,
+#home a:hover, #groups a:hover, #shows a:hover, #photos a:hover, #audio a:hover, #movies a:hover,
 #bio a:hover, #history a:hover, #links a:hover, #contact a:hover,
 #store a:hover, #press a:hover {
 	background: #efc082;
 	color: #002f50;
 	}
-#homeOn, #groupsOn, #photosOn, #audioOn, #moviesOn, #bioOn, #historyOn,
+#homeOn, #groupsOn, #showsOn, #photosOn, #audioOn, #moviesOn, #bioOn, #historyOn,
 #linksOn, #contactOn, #storeOn, #pressOn {
 	top: auto;
 	background: #d9c9a0;
 	}
-#homeOn a, #groupsOn a, #photosOn a, #audioOn a, #moviesOn a, #bioOn a, #historyOn a,
+#homeOn a, #groupsOn a, #showsOn a, #photosOn a, #audioOn a, #moviesOn a, #bioOn a, #historyOn a,
 #linksOn a, #contactOn a, #storeOn a, #pressOn a {
 	color: #ed9e4a;
 	}
