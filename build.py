@@ -16,16 +16,27 @@ import http.server
 import threading
 
 
+DEFAULT_NEWS_BOX_HEIGHT = 402
+
+
 def load_news_txt(path):
     """Convert news.txt to HTML paragraphs. Blank lines = paragraph break.
-    Supports [link text](url) markdown-style links."""
+    Supports [link text](url) markdown-style links. Returns (html, box_height)
+    where box_height is the pixel height set by a lone {box-height: N} line
+    (falling back to DEFAULT_NEWS_BOX_HEIGHT if the line is absent)."""
     if not os.path.isfile(path):
-        return ""
+        return "", DEFAULT_NEWS_BOX_HEIGHT
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
 
     # Strip comment lines (lines starting with #) before parsing paragraphs
     text = "\n".join(l for l in text.splitlines() if not l.strip().startswith("#"))
+
+    box_height = DEFAULT_NEWS_BOX_HEIGHT
+    match = re.search(r'^\{box-height:\s*(\d+)\}\s*$', text, re.MULTILINE)
+    if match:
+        box_height = int(match.group(1))
+        text = text[:match.start()] + text[match.end():]
 
     def convert_links(line):
         return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', line)
@@ -44,7 +55,7 @@ def load_news_txt(path):
         paragraphs.append(f"<p{css_class}>" + "<br>".join(lines) + "</p>")
         paragraphs.append('<p class="spacer">&nbsp;</p>')
 
-    return "\n".join(paragraphs)
+    return "\n".join(paragraphs), box_height
 
 
 def load_txt_content(path, spacer_mode=True):
@@ -146,7 +157,7 @@ def build():
         if f.endswith(".njk") and os.path.isfile(os.path.join(SRC_DIR, f))
     ]
 
-    news_html = load_news_txt(os.path.join(SRC_DIR, "news.txt"))
+    news_html, news_box_height = load_news_txt(os.path.join(SRC_DIR, "news.txt"))
 
     for page_file in sorted(pages):
         page_path = os.path.join(SRC_DIR, page_file)
@@ -158,6 +169,7 @@ def build():
         permalink = fm.get("permalink", page_file.replace(".njk", ".html"))
         page_vars = {k: v for k, v in fm.items() if k not in ("layout", "permalink")}
         page_vars["news_html"] = news_html
+        page_vars["news_box_height"] = news_box_height
 
         content_txt_file = fm.get("contentTxt")
         if content_txt_file:

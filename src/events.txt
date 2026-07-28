@@ -14,8 +14,7 @@ Catch me live at these upcoming shows
 
 {event}
 [Lambchop - 08/30/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-holiday-special-w-randall-throckmorton-special-guests)
-
-<em>The Throckmorton Trio opens for this show as well!</em>
+<em>The Throckmorton Trio opens for the above show as well!</em>
 
 {event}
 [Lambchop - 09/27/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-season-finale-with-daughter-of-swords-mike2600-special-guests/)

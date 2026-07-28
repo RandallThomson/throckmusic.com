@@ -17,16 +17,25 @@
 #   it a small, italic "last updated" style. Put it first and update the
 #   date by hand whenever you edit this file, so it always reflects when
 #   you actually made the change.
+# - A line by itself like {box-height: 402} sets how tall the scrollable
+#   news box is, in pixels. The top of the box never moves, so a bigger
+#   number pushes the bottom of the box further down the page, and a
+#   smaller number raises it. Remove the line to fall back to the default.
+
+{box-height: 420}
 
 {updated}
 Last updated: July 27, 2026
 
 Throckmusic.com is back!
 
-I've revived my vintage sheet-music-style site after many years hiatus. It was designed by [Mark Simonson Studio](https://www.marksimonson.com/) about 20 years ago, thus why my younger eyes are following you up top.
+I've revived my vintage sheet-music-style site after many years hiatus. It needed some modernization to be hostable. The website was originally designed by [Mark Simonson Studio](https://www.marksimonson.com/) about 23 years ago.
 
-In other recent news, I've got a lovely [trio](throckmorton-trio.html) going that you can catch around town. I'm also a guest vocalist on much of the forthcoming album ["Punching the Clown"](https://open.spotify.com/prerelease/3nJxbZHFZLwz6lbErIsMPh?flow_ctx=594187a8-28b8-455b-a55f-0674af76e0db%3A1785052145) a brilliant true-to-form work from [Lambchop](https://www.lambchop.net/), due out in late August 2026. You can read more about it [here](https://pitchfork.com/news/lambchop-line-up-tour-and-justin-vernon-assisted-album-punching-the-clown/).
+In other recent news, I'm working up new music with the [Throckmorton Trio](throckmorton-trio.html) regularily, so look for [upcoming shows](events.html) or get on my [mailing list](contact.html).
+
+I'm also a guest vocalist on much of the forthcoming album ["Punching the Clown"](https://open.spotify.com/prerelease/3nJxbZHFZLwz6lbErIsMPh?flow_ctx=594187a8-28b8-455b-a55f-0674af76e0db%3A1785052145), a work from [Lambchop](https://www.lambchop.net/) and others. It is due out in late August 2026. You can read more about it [here](https://pitchfork.com/news/lambchop-line-up-tour-and-justin-vernon-assisted-album-punching-the-clown/).
 
 Catch me live with Lambchop at these [upcoming shows](events.html)
 
-Sincerely, Randall Throckmorton
+Sincerely, 
+Randall Throckmorton
