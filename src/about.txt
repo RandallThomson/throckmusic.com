@@ -6,6 +6,10 @@
 # paragraph, [visible text](https://example.com) makes a link, and lines
 # starting with # (like these) are comments and won't appear on the site.
 # Plain HTML tags (like <em>...</em>) are passed through as-is.
+#
+# Paragraphs are centered by default. A line containing only {left} or
+# {center} placed directly above a paragraph overrides its alignment for
+# that paragraph only.
 
 Randall Throckmorton is a Minnesota-based vocalist, composer, and instrumentalist. His music draws on Tin Pan Alley, early folk traditions, and British psychedelia. His work has a way of carrying you back in time, built around earnestly crooned Victrola-era melodies, evocative chords, and vivid lyrics.
 

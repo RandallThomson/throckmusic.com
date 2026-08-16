@@ -157,6 +157,12 @@ h1 {
 	font-style: italic;
 	color: #6b6154;
 	}
+#news p.left {
+	text-align: left;
+	}
+#news p.center {
+	text-align: center;
+	}
 #news a:link {
 	color: #002f50;
 	font-family: 'EB Garamond', serif;

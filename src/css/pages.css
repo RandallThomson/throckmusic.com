@@ -266,6 +266,12 @@ h1 {
 	line-height: 7px;
 	margin-bottom: 4px;
 	}
+#well p.left {
+	text-align: left;
+	}
+#well p.center {
+	text-align: center;
+	}
 
 /* Contact form styles */
 .contact-form {

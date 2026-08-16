@@ -8,6 +8,10 @@
 # line above and below it to become its own line on the page.
 # [visible text](url) makes a link, and lines starting with # (like these)
 # are comments and won't appear on the site.
+#
+# Paragraphs are centered by default. A line containing only {left} or
+# {center} placed directly above a paragraph overrides its alignment for
+# that paragraph only.
 
 {spacer}
 

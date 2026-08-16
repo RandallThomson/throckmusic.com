@@ -21,9 +21,11 @@ DEFAULT_NEWS_BOX_HEIGHT = 402
 
 def load_news_txt(path):
     """Convert news.txt to HTML paragraphs. Blank lines = paragraph break.
-    Supports [link text](url) markdown-style links. Returns (html, box_height)
-    where box_height is the pixel height set by a lone {box-height: N} line
-    (falling back to DEFAULT_NEWS_BOX_HEIGHT if the line is absent)."""
+    Supports [link text](url) markdown-style links, and a lone {left} or
+    {center} line above a paragraph to override the box's default centered
+    alignment. Returns (html, box_height) where box_height is the pixel
+    height set by a lone {box-height: N} line (falling back to
+    DEFAULT_NEWS_BOX_HEIGHT if the line is absent)."""
     if not os.path.isfile(path):
         return "", DEFAULT_NEWS_BOX_HEIGHT
     with open(path, "r", encoding="utf-8") as f:
@@ -51,6 +53,12 @@ def load_news_txt(path):
         elif lines and lines[0].strip() == "{updated}":
             css_class = ' class="updated"'
             lines = lines[1:]
+        elif lines and lines[0].strip() == "{left}":
+            css_class = ' class="left"'
+            lines = lines[1:]
+        elif lines and lines[0].strip() == "{center}":
+            css_class = ' class="center"'
+            lines = lines[1:]
         lines = [convert_links(l) for l in lines]
         paragraphs.append(f"<p{css_class}>" + "<br>".join(lines) + "</p>")
         paragraphs.append('<p class="spacer">&nbsp;</p>')
@@ -62,11 +70,13 @@ def load_txt_content(path, spacer_mode=True):
     """Convert a page's box-content .txt file to HTML paragraphs. Same
     lightweight syntax as news.txt: blank line = new paragraph, # lines are
     comments, [text](url) becomes a link, {event} above a paragraph gives it
-    the event-link style, and a lone {spacer} line inserts extra breathing
-    room between paragraphs. When spacer_mode is True (default) a spacer is
-    also added automatically between every paragraph, for prose-style
-    content; set spacer_mode=False for tighter list-style content and add
-    {spacer} markers by hand only where extra space is wanted."""
+    the event-link style, {left}/{center} above a paragraph overrides the
+    box's default centered alignment, and a lone {spacer} line inserts extra
+    breathing room between paragraphs. When spacer_mode is True (default) a
+    spacer is also added automatically between every paragraph, for
+    prose-style content; set spacer_mode=False for tighter list-style
+    content and add {spacer} markers by hand only where extra space is
+    wanted."""
     if not os.path.isfile(path):
         return ""
     with open(path, "r", encoding="utf-8") as f:
@@ -88,6 +98,12 @@ def load_txt_content(path, spacer_mode=True):
         css_class = ""
         if lines and lines[0].strip() == "{event}":
             css_class = ' class="event"'
+            lines = lines[1:]
+        elif lines and lines[0].strip() == "{left}":
+            css_class = ' class="left"'
+            lines = lines[1:]
+        elif lines and lines[0].strip() == "{center}":
+            css_class = ' class="center"'
             lines = lines[1:]
         lines = [convert_links(l) for l in lines]
         paragraphs.append(f"<p{css_class}>" + "<br>".join(lines) + "</p>")

@@ -9,12 +9,19 @@
 # that paragraph the special show-listing link style (centered, plain
 # underline). Add new gigs the same way - copy an {event} block below and
 # fill in the details. Newest/soonest show usually goes first.
+#
+# Paragraphs are centered by default. A line containing only {left} or
+# {center} placed directly above a paragraph overrides its alignment for
+# that paragraph only.
 
 Catch me live at these upcoming shows
 
 {event}
 [Lambchop - 08/30/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-holiday-special-w-randall-throckmorton-special-guests)
 <em>The Throckmorton Trio opens for the above show as well!</em>
+
+{event}
+[The Throckmorton Trio - 09/4/2026 - @The White Squirrel Bar](https://whitesquirrelbar.com/calendar/)
 
 {event}
 [Lambchop - 09/27/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-season-finale-with-daughter-of-swords-mike2600-special-guests/)

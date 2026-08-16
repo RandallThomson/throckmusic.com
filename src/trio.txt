@@ -5,19 +5,17 @@
 # paragraph, [visible text](https://example.com) makes a link, and lines
 # starting with # (like these) are comments and won't appear on the site.
 # Plain HTML tags (like <img>) are passed through as-is.
+#
+# Paragraphs are centered by default. A line containing only {left} or
+# {center} placed directly above a paragraph overrides its alignment for
+# that paragraph only.
 
-The Throckmorton Trio inhabits a strange, beautiful crossroads where Jazz Age parlor songs drift into British psychedelia. Crooner-composer Randall Throckmorton draws listeners toward the Victrola horn, conjuring Tin Pan Alley melodies, curious lyrics, and the occasional long-lost chord.
+{center}
+The Throckmorton Trio blends original songs with overlooked gems, from classical art songs and Appalachian ballads to art rock and torch songs, in an intimate acoustic sound that draws listeners into the horn of a Victrola—or the amber glow of a late-night radio dial. Their music inhabits a strange crossroads where Jazz Age parlor songs drift into psychedelia, carried by forgotten sounds you didn’t realize you missed.
 
-Randall is also known for work with the [Deadly Nightshade Family Singers](https://open.spotify.com/artist/0GPEJWNBUtfnkFdpk4EZCO/), [Dreamland Faces](https://dreamlandfaces.com/), The Selby Avenue Syncopators and Le Cirque Rouge Cabaret and Burlesque.
+{left}
+[Randall Throckmorton](about.html) is known for work with the [Deadly Nightshade Family Singers](https://open.spotify.com/artist/0GPEJWNBUtfnkFdpk4EZCO/), [Dreamland Faces](https://dreamlandfaces.com/), [The Selby Avenue Syncopators](https://youtu.be/fqJm-yxWeLs), and [Le Cirque Rouge Cabaret and Burlesque](https://www.instagram.com/lecirquerouge/).
 
-Multi-instrumentalists Christopher Thompson and Tom Wadzinski shape the trio's sound with their vocals, adventuresomeness, and deft solos, creating unexpected textures throughout a driving yet dreamlike repertoire.
-
-Christopher Thompson currently plays bass and piano with [Stephanie Was & The Secret Izz](https://stephwasthesecretizz.bandcamp.com/album/heres-what-i-saw) and Le Cirque Rouge Cabaret.
-
-Tom Wadzinski is very active in the Bluegrass and Oldtime community and a mandolinist and singer with [Blue Groove Bluegrass](https://www.bluegroovebluegrass.com).
-
-The trio blends originals with a wide range of lesser performed covers, from classical art songs and Appalachian ballads to art-rock and torch songs, maintaining a distinctive intimacy centered around Randall's vintage crooning style.
-
-Their original songs move between the jaunty and dark, dreamy and intimate, carried by a voice that is unmistakable and expressive. 
+Multi-instrumentalists Christopher Thompson and Tom Wadzinski round out the trio, shaping its sound with layered vocals and deft musicianship that lend unexpected textures to a repertoire equal parts driving and dreamlike. Christopher plays bass and piano with [Stephanie Was & The Secret Izz](https://stephwasthesecretizz.bandcamp.com/album/heres-what-i-saw) and [Le Cirque Rouge Cabaret and Burlesque](https://www.instagram.com/lecirquerouge/). Tom is deeply active in the Bluegrass and Oldtime community, and a mandolinist and singer with [Blue Groove Bluegrass](https://www.bluegroovebluegrass.com).
 
 <img src="images/photos/Transparent Throckmorton Trio.png" class="no-border" alt="The Throckmorton Trio">
