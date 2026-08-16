@@ -18,10 +18,12 @@ Catch me live at these upcoming shows
 
 {event}
 [Lambchop - 08/30/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-holiday-special-w-randall-throckmorton-special-guests)
-<em>The Throckmorton Trio opens for the above show as well!</em>
+<em>[The Throckmorton Trio](throckmorton-trio.html) opens the show, then I sing background vocals with the Lambchop</em>
 
 {event}
 [The Throckmorton Trio - 09/4/2026 - @The White Squirrel Bar](https://whitesquirrelbar.com/calendar/)
+<em>Stehpanie Was is at 6 PM followed by [The Throckmorton Trio](throckmorton-trio.html) at 7 PM (no cover and music until 1 PM after us) </em>
 
 {event}
 [Lambchop - 09/27/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-season-finale-with-daughter-of-swords-mike2600-special-guests/)
+<em>I sing background vocals with Lambchop at this show</em>
