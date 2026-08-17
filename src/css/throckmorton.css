@@ -213,7 +213,7 @@ h1 {
 	background-color: #efc082;
 	}
 #newsScroll {
-	/* height is set inline from the {box-height} directive in news.txt */
+	/* height is set inline from the {box-height} directive in home.txt */
 	overflow-y: scroll;
 	width: calc(100% - 16px);
 	scrollbar-color: transparent transparent;

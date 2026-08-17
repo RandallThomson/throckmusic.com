@@ -1,5 +1,6 @@
 _site/
 node_modules/
+__pycache__/
 .claude/
 images/photos/unused/Hillwilliams-1989.png
 images/photos/ChristopherThompson.jpg

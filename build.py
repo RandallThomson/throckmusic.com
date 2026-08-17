@@ -20,7 +20,7 @@ DEFAULT_NEWS_BOX_HEIGHT = 402
 
 
 def load_news_txt(path):
-    """Convert news.txt to HTML paragraphs. Blank lines = paragraph break.
+    """Convert home.txt to HTML paragraphs. Blank lines = paragraph break.
     Supports [link text](url) markdown-style links, and a lone {left} or
     {center} line above a paragraph to override the box's default centered
     alignment. Returns (html, box_height) where box_height is the pixel
@@ -68,7 +68,7 @@ def load_news_txt(path):
 
 def load_txt_content(path, spacer_mode=True):
     """Convert a page's box-content .txt file to HTML paragraphs. Same
-    lightweight syntax as news.txt: blank line = new paragraph, # lines are
+    lightweight syntax as home.txt: blank line = new paragraph, # lines are
     comments, [text](url) becomes a link, {event} above a paragraph gives it
     the event-link style, {left}/{center} above a paragraph overrides the
     box's default centered alignment, and a lone {spacer} line inserts extra
@@ -173,7 +173,7 @@ def build():
         if f.endswith(".njk") and os.path.isfile(os.path.join(SRC_DIR, f))
     ]
 
-    news_html, news_box_height = load_news_txt(os.path.join(SRC_DIR, "news.txt"))
+    news_html, news_box_height = load_news_txt(os.path.join(SRC_DIR, "home.txt"))
 
     for page_file in sorted(pages):
         page_path = os.path.join(SRC_DIR, page_file)

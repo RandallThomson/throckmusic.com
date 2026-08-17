@@ -2,7 +2,7 @@
 # "Randall Throckmorton" heading (see src/about.njk). Rebuild after editing
 # (build.bat or `python build.py`).
 #
-# Same syntax as news.txt: a blank line between lines starts a new
+# Same syntax as home.txt: a blank line between lines starts a new
 # paragraph, [visible text](https://example.com) makes a link, and lines
 # starting with # (like these) are comments and won't appear on the site.
 # Plain HTML tags (like <em>...</em>) are passed through as-is.
