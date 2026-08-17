@@ -17,8 +17,10 @@
 
 {spacer}
 
+{left}
 Led by Randall Throckmorton’s distinctive high-voiced singing and original songs, the trio brings together Tom Wadzinski’s deft mandolin and Christopher Thompson’s inventive piano in an intimate, drumless acoustic setting. 
 
+{left}
 Originals mingle with forgotten melodies and lesser-heard songs, drifting between the playful, dark, dreamy, and strange. Expect curious lyrics, unexpected turns, playful improvisation, and the occasional long-lost chord you didn’t realize you were missing—a performance that can feel like being drawn into the horn of a Victrola or the amber glow of a late-night radio dial.
 
 {left}
