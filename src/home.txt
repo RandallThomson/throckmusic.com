@@ -32,7 +32,7 @@ Last updated: July 27, 2026
 
 Throckmusic.com is back!
 
-I've revived my vintage sheet-music-style site after many years hiatus. It needed some modernization to be hostable. The website was originally designed by [Mark Simonson Studio](https://www.marksimonson.com/) 23 years ago.
+I've revived my vintage sheet-music-style site after many years hiatus. It needed some modernization to be hostable and it was hard to get around to.
 
 In other recent news, I'm working up new music with the [Throckmorton Trio](throckmorton-trio.html) regularily, so look for [upcoming shows](events.html) or get on my [mailing list](contact.html).
 
