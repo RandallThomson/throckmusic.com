@@ -18,6 +18,19 @@ import threading
 
 DEFAULT_NEWS_BOX_HEIGHT = 402
 
+_NOTE_LINK_RE = re.compile(r'\[\[([^\]]+)\]\]\(([^)]+)\)')
+_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
+
+
+def convert_links(line):
+    """[[text]](url) -> a link styled like the small "note" text (matches
+    class="note"). [text](url) -> a plain link. Order matters: the
+    double-bracket form is matched first so it isn't swallowed by the
+    plain-link pattern."""
+    line = _NOTE_LINK_RE.sub(r'<a href="\2" class="note">\1</a>', line)
+    line = _LINK_RE.sub(r'<a href="\2">\1</a>', line)
+    return line
+
 
 def load_news_txt(path):
     """Convert home.txt to HTML paragraphs. Blank lines = paragraph break.
@@ -39,9 +52,6 @@ def load_news_txt(path):
     if match:
         box_height = int(match.group(1))
         text = text[:match.start()] + text[match.end():]
-
-    def convert_links(line):
-        return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', line)
 
     paragraphs = ['<p class="spacer">&nbsp;</p>']
     for block in re.split(r'\n{2,}', text.strip()):
@@ -84,9 +94,6 @@ def load_txt_content(path, spacer_mode=True):
 
     text = "\n".join(l for l in text.splitlines() if not l.strip().startswith("#"))
 
-    def convert_links(line):
-        return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', line)
-
     paragraphs = []
     if spacer_mode:
         paragraphs.append('<p class="spacer">&nbsp;</p>')
@@ -111,6 +118,102 @@ def load_txt_content(path, spacer_mode=True):
             paragraphs.append('<p class="spacer">&nbsp;</p>')
 
     return "\n".join(paragraphs)
+
+
+def load_audio_txt(path):
+    """Convert a song-listing .txt file (like src/audio.txt) into the boxed
+    HTML structure used on the Audio page. Line-oriented, not paragraph
+    (blank-line) based, since a track listing is closer to a list than
+    prose. Recognizes:
+    - Lines starting with # are comments and are ignored.
+    - Blank lines are ignored (they don't add space by themselves - use
+      {spacer} for that).
+    - [[text]](url) makes a "note"-styled link (matches the small song-link
+      style). [text](url) makes a plain link. Plain HTML tags are passed
+      through as-is.
+    - {box} on its own line starts a new bordered box (closing the
+      previous one, if any). Put it before each new section/album.
+    - {h3: Heading text} inserts a section heading. Raw HTML is allowed
+      inside it, e.g. {h3: Larmes De Colere <span class="note">(tears of
+      rage)</span>} to show part of a heading in the small note style.
+    - {note} above a line makes that line small "note" style text (for
+      details like file size, credits, etc).
+    - {image: WIDTHxHEIGHT | alt text} above a line containing just an
+      image path (e.g. images/BunFun.gif) inserts that image.
+    - {boxend} on its own line closes the current box without opening a
+      new one. Use it when you want a spacer or other content to sit
+      outside/between boxes rather than inside one.
+    - {spacer} on its own line adds a little vertical breathing room.
+    - Any other line becomes a plain paragraph.
+    """
+    if not os.path.isfile(path):
+        return ""
+    with open(path, "r", encoding="utf-8") as f:
+        raw_lines = f.read().splitlines()
+
+    lines = [l for l in raw_lines if not l.strip().startswith("#")]
+
+    h3_re = re.compile(r'^\{h3:\s*(.*?)\s*\}$')
+    image_re = re.compile(r'^\{image:\s*(\d+)\s*x\s*(\d+)\s*\|\s*(.*?)\s*\}$')
+
+    out = []
+    box_open = False
+    pending_note = False
+    pending_image = None  # (width, height, alt) once an {image:...} marker is seen
+
+    for raw in lines:
+        line = raw.strip()
+        if not line:
+            continue
+
+        if line == "{box}":
+            if box_open:
+                out.append("</div>")
+            out.append('<div class="box">')
+            box_open = True
+            continue
+
+        if line == "{boxend}":
+            if box_open:
+                out.append("</div>")
+                box_open = False
+            continue
+
+        if line == "{spacer}":
+            out.append('<p>&nbsp;</p>')
+            continue
+
+        if line == "{note}":
+            pending_note = True
+            continue
+
+        m = h3_re.match(line)
+        if m:
+            out.append(f"<h3>{convert_links(m.group(1))}</h3>")
+            continue
+
+        m = image_re.match(line)
+        if m:
+            pending_image = (m.group(1), m.group(2), m.group(3))
+            continue
+
+        if pending_image:
+            width, height, alt = pending_image
+            out.append(f'<p><img src="{line}" width="{width}" height="{height}" alt="{alt}"></p>')
+            pending_image = None
+            continue
+
+        text = convert_links(line)
+        if pending_note:
+            out.append(f'<p><span class="note">{text}</span></p>')
+            pending_note = False
+        else:
+            out.append(f"<p>{text}</p>")
+
+    if box_open:
+        out.append("</div>")
+
+    return "\n".join(out)
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -189,10 +292,14 @@ def build():
 
         content_txt_file = fm.get("contentTxt")
         if content_txt_file:
-            spacer_mode = fm.get("contentSpacing", "").strip().lower() != "compact"
-            page_vars["content_txt"] = load_txt_content(
-                os.path.join(SRC_DIR, content_txt_file), spacer_mode=spacer_mode
-            )
+            content_txt_path = os.path.join(SRC_DIR, content_txt_file)
+            if fm.get("contentTxtFormat", "").strip().lower() == "audio":
+                page_vars["content_txt"] = load_audio_txt(content_txt_path)
+            else:
+                spacer_mode = fm.get("contentSpacing", "").strip().lower() != "compact"
+                page_vars["content_txt"] = load_txt_content(
+                    content_txt_path, spacer_mode=spacer_mode
+                )
 
         # Render the page body as a Jinja2 template (handles any inline tags)
         body_tmpl = env.from_string(body)

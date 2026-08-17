@@ -1,0 +1,153 @@
+# Content for the Audio page (see src/audio.njk). Plain text, not HTML.
+# Rebuild after editing (build.bat or `python build.py`).
+#
+# SYNTAX:
+# - Lines starting with # are comments and are ignored.
+# - Blank lines are ignored (they don't add space by themselves - use
+#   {spacer} for that).
+# - [[text]](url) makes a link styled like a song title (small, bold-ish
+#   "note" style). [text](url) makes a plain link. Plain HTML tags (like
+#   <em>...</em>) are passed through as-is.
+# - {box} on its own line starts a new bordered box, closing the previous
+#   one if there was one. Put it before each new section/album.
+# - {h3: Heading text} inserts a section heading. Raw HTML is allowed
+#   inside it, e.g. {h3: Larmes De Colere <span class="note">(tears of
+#   rage)</span>} to show part of a heading in the small note style.
+# - {note} placed directly above a line makes that one line small "note"
+#   style text (for details like file size, credits, etc).
+# - {image: WIDTHxHEIGHT | alt text} placed directly above a line that is
+#   just an image path (e.g. images/BunFun.gif) inserts that image.
+# - {boxend} on its own line closes the current box without opening a new
+#   one - use it when you want a spacer to sit outside/between boxes.
+# - {spacer} on its own line adds a little vertical breathing room.
+# - Any other line becomes a plain paragraph.
+
+{box}
+{h3: Randall Throckmorton (solo)}
+{note}
+The audio examples here are quite old
+{note}
+check out my [[youtube]](https://www.youtube.com/@randallthrockmorton) channels for newer audio
+{spacer}
+[[Wing Machine Waltz]](audio/Wing_Machine.mp3)
+{note}
+[1.77 MB] - Written and performed by Randall Throckmorton
+{note}
+copyright 2008
+{spacer}
+
+[[Johnny has gone for a Soldier]](audio/Johnny Has Gone for a Soldier.mp3)
+{note}
+Traditional 18th Century ballad
+{note}
+A tribute to 1940's ERA folk-singer Josh White
+{spacer}
+
+<em><strong>Torch Songs</strong></em>
+[[The Lamp is Low]](audio/LampisLow.mp3)
+{note}
+[4.51 MB] - TSiler/Piano - AMcCormick/Saw
+[[Always Chasing Rainbows]](audio/AlwaysChasingRainbows.mp3)
+{note}
+[5.48 MB] - Andy McCormick &quot;saw&quot;
+{spacer}
+
+<em><strong>Other Originals</strong></em>
+{spacer}
+[[Honeysuckle Vine]](audio/HoneysuckleVine.mp3)
+{note}
+[4.24 MB]
+[[Fat Rabbit's Huntdown]](audio/FatRabbitsHuntdown.mp3)
+{note}
+[5.17 MB]
+[[Reprise]](audio/Reprise.mp3)
+{note}
+[3.15 MB]
+[[Throckmorton's Fury]](audio/DustyBible.mp3)
+{note}
+[3.79 MB]
+{spacer}
+{note}
+Written and performed by Randall Throckmorton (except where noted) <strong>copyright</strong> 2003
+{spacer}
+
+{box}
+{h3: Dreamland Faces Collaboration}
+[[www.dreamlandfaces.com]](http://www.dreamlandfaces.com/)
+{spacer}
+Listen to: [[Everything I Have is Yours]](audio/Everything_I_Have_is_Yours.mp3)
+{note}
+From
+{note}
+[Dreamland Faces PARTY BAND](http://www.dreamlandfaces.com/) cd which I SING and perform on
+{image: 300x152 | Dreamland Faces Bunnies Fighting Album}
+images/BunFun.gif
+{spacer}
+{note}
+Trombone: Steve Sandberg
+{note}
+Bass Accordion/Musical Saw: Andy McCormick
+{note}
+Soprano Saxophone: Kristen Froebal
+{note}
+Accordion: Karen Majewicz
+{note}
+Vocal: Randall Throckmorton
+
+{box}
+{h3: Larmes De Colere <span class="note">(tears of rage)</span>}
+[The Little Radio](audio/To the Little Radio.mp3)
+{note}
+[3.98 MB] - 2006
+{note}
+Sample of the group doing the music of Hans Eisler
+{spacer}
+{note}
+Piano: Tom Siler
+{note}
+Accordion: Karen Majowicz
+{note}
+Vocals: Randall Throckmorton
+{note}
+Musical Saw: Andy McCormick
+{note}
+[Femme De Sorciere](audio/FemmeDeSorciere.mp3)
+{note}
+from &quot;the Tunnel&quot;
+
+{box}
+{h3: Deadly Nightshade Family Singers}
+Here are my originals songs from the 2001 released DNFS Album
+{h3: Plain Brown Suit}
+for other Nightshades
+{image: 50x50 | Plain Brown Suit album cover}
+images/PBS.jpg
+{spacer}
+[Hammer of the Gods](audio/HammeroftheGods.mp3)
+{note}
+[3.71 MB]
+[Schwondle](audio/Schwondle.mp3)
+{note}
+[4.85 MB]
+[God gets Lazy](audio/GodGetsLazy.mp3)
+{note}
+[5.67 MB]
+
+{boxend}
+{spacer}
+
+{box}
+{h3: Fall 2010 Recordings of Hanns Eisler music}
+[&quot;The Way the Wind Blows&quot;](audio/The Way the Wind Blows.mp3)
+&quot;[Epitaph](audio/Epitaph_for_One_Who_Died_in_Flanders.mp3)&quot;
+[&quot;Und Endlich&quot;](audio/Und_Endlich.mp3)
+{spacer}
+{note}
+lyrics: Bertolt Brecht
+{note}
+Tom Siler played piano on &quot;Und Endlich&quot; and &quot;The Way the Wind Blows&quot;
+{note}
+other instruments and arrangements r.throckmorton
+
+{boxend}
+{spacer}
