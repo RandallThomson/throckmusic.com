@@ -248,6 +248,9 @@ h1 {
 	font-size: 112%;
 	font-weight: normal;
 	}
+#well p .note {
+	font-size: 14.2px;
+	}
 .video-wrap {
 	display: flex;
 	justify-content: center;
