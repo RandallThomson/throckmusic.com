@@ -15,11 +15,87 @@
 
 {spacer}
 
-Press clippings from Music Acts past and present
+
 
 {spacer}
 
-Dreamland Faces
+<strong>Lambchop &quot;Punching the Clown&quot;</strong>
+
+<em>specific mentions or attributions of my singing with the album</em>
+
+{spacer}
+
+[Racket - Aug 2026](https://racketmn.com/i-literally-cant-get-enough-of-minnesota-17-albums-in-lambchop-finds-fresh-inspiration-up-north)
+
+[Music-on-net (Germany) - Aug 2026](https://music-on-net.de/lambchop-punching-the-clown-2026/)
+
+[AllMusic - Aug 2026](https://www.allmusic.com/album/punching-the-clown-mw0004806786)
+
+{spacer}
+
+<strong>Lambchop &quot;Punching the Clown&quot; Collaboration</strong>
+
+<em>general praise for album or related performances involving me</em>
+
+{spacer}
+
+[Pitchfork - Aug 2026](https://pitchfork.com/reviews/albums/lambchop-punching-the-clown/)
+
+[The Guardian - Aug 2026](https://www.theguardian.com/music/2026/aug/20/lambchop-punching-the-clown-review)
+
+[Under the Radar - Aug 2026](https://www.undertheradarmag.com/reviews/punching_the_clown_lambchop_merge)
+
+[Americana UK - Aug 2026](https://americana-uk.com/lambchop-punching-the-clown)
+
+[For Folk's Sake - Aug 2026](https://www.forfolkssake.com/reviews/42300/album-lambchop-punching-the-clown)
+
+[Beats Per Minute - Aug 2026](https://beatsperminute.com/album-review-lambchop-punching-the-clown/)
+
+[MOJO - Aug 2026](https://www.mojo4music.com/articles/new-music/lambchop-punching-the-clown-review/)
+
+[musicOMH - Aug 2026](https://www.musicomh.com/reviews/albums/lambchop-punching-the-clown)
+
+[Far Out - Aug 2026](https://faroutmagazine.co.uk/lambchop-punching-the-clown-album-review/)
+
+[Rolling Stone Germany - Aug 2026](https://www.rollingstone.de/reviews/lambchop-punching-the-clown-review/)
+
+[VISIONS - Aug 2026](https://www.visions.de/review/lambchop-punching-the-clown/)
+
+[SaitenKult - Aug 2026](https://www.saitenkult.de/2026/08/31/lambchop-punching-the-clown/)
+
+[Talking Music - Aug 2026](https://talkingmusic.de/details/lambchop-punching-the-clown-cityslang)
+
+[MusikBlog - Aug 2026](https://www.musikblog.de/2026/08/lambchop-punching-the-clown/)
+
+[Gaesteliste - Aug 2026](https://gaesteliste.de/2026/08/21/review/lambchop-punching-the-clown/)
+
+[Música Instantânea - Sept 2026](https://musicainstantanea.com.br/critica-lambchop-punching-the-clown/)
+
+[Exile SH Magazine - Sept 2026](https://exileshmagazine.com/2026/09/lambchop-punching-the-clown.html)
+
+[El Giradiscos - Sept 2026](https://www.elgiradiscos.com/2026/09/lambchop-punching-clown.html)
+
+[RockShock - Sept 2026](https://www.rockshock.it/lambchop-recensione-di-punching-the-clown/)
+
+[Deia - Sept 2026](https://www.deia.eus/cultura/2026/09/13/lambchop-busqueda-verdad-traves-emocion-11535548.html)
+
+[Futurism Restated - Sept 2026](https://futurismrestated.substack.com/p/fr-186-levitating-with-lambchop)
+
+GutterPutter - Aug 2026 (print only)
+
+{spacer}
+
+<strong>Randall Throckmorton (solo)</strong>
+
+{spacer}
+
+[Pulse TC - Feb 2005](images/Press/Throckmorton-PulseTC-02-02-2005.gif)
+
+[Daily Copper - Jan 2005](images/Press/Throckmorton-DailyCopperMichigan-01-01-2005.gif)
+
+{spacer}
+
+<strong>Dreamland Faces</strong>
 
 [City Pages - Dec 2008](images/Press/Dreamland-CityPages-12-1-2008.jpg)
 
@@ -37,17 +113,7 @@ Dreamland Faces
 
 {spacer}
 
-Randall Throckmorton
-
-{spacer}
-
-[Pulse TC - Feb 2005](images/Press/Throckmorton-PulseTC-02-02-2005.gif)
-
-[Daily Copper - Jan 2005](images/Press/Throckmorton-DailyCopperMichigan-01-01-2005.gif)
-
-{spacer}
-
-Larmes de Colere
+<strong>Larmes de Colere</strong>
 
 {spacer}
 
@@ -67,7 +133,7 @@ Larmes de Colere
 
 {spacer}
 
-Deadly Nightshade Family Singers
+<strong>Deadly Nightshade Family Singers</strong>
 
 {spacer}
 
@@ -85,7 +151,7 @@ Deadly Nightshade Family Singers
 
 {spacer}
 
-Other
+<strong>Other</strong>
 
 {spacer}
 

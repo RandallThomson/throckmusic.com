@@ -275,6 +275,31 @@ h1 {
 #well p.center {
 	text-align: center;
 	}
+.divider {
+	border: none;
+	border-top: 1px solid #d9a480;
+	width: 220px;
+	margin: 12px auto;
+	}
+#well p.event.past {
+	opacity: 0.55;
+	}
+#well p.event.past a:link,
+#well p.event.past a:visited,
+#well p.event.past a:active {
+	color: #666666;
+	font-weight: normal;
+	border-bottom: solid #999999 1px;
+	}
+#well p.event.past a:hover {
+	color: #666666;
+	background-color: transparent;
+	border-bottom: solid #999999 1px;
+	}
+.sold-out {
+	color: #d45122;
+	font-weight: bold;
+	}
 
 /* Contact form styles */
 .contact-form {

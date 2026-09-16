@@ -80,11 +80,12 @@ def load_txt_content(path, spacer_mode=True):
     """Convert a page's box-content .txt file to HTML paragraphs. Same
     lightweight syntax as home.txt: blank line = new paragraph, # lines are
     comments, [text](url) becomes a link, {event} above a paragraph gives it
-    the event-link style, {left}/{center} above a paragraph overrides the
-    box's default centered alignment, and a lone {spacer} line inserts extra
-    breathing room between paragraphs. When spacer_mode is True (default) a
-    spacer is also added automatically between every paragraph, for
-    prose-style content; set spacer_mode=False for tighter list-style
+    the event-link style, {event-past} does the same but dims it (for a show
+    that's already happened), {left}/{center} above a paragraph overrides
+    the box's default centered alignment, and a lone {spacer} line inserts
+    extra breathing room between paragraphs. When spacer_mode is True
+    (default) a spacer is also added automatically between every paragraph,
+    for prose-style content; set spacer_mode=False for tighter list-style
     content and add {spacer} markers by hand only where extra space is
     wanted."""
     if not os.path.isfile(path):
@@ -102,9 +103,17 @@ def load_txt_content(path, spacer_mode=True):
         if lines and lines[0].strip() == "{spacer}":
             paragraphs.append('<p class="spacer">&nbsp;</p>')
             continue
+        if len(lines) == 1 and lines[0].strip().startswith("<hr"):
+            paragraphs.append(lines[0].strip())
+            if spacer_mode:
+                paragraphs.append('<p class="spacer">&nbsp;</p>')
+            continue
         css_class = ""
         if lines and lines[0].strip() == "{event}":
             css_class = ' class="event"'
+            lines = lines[1:]
+        elif lines and lines[0].strip() == "{event-past}":
+            css_class = ' class="event past"'
             lines = lines[1:]
         elif lines and lines[0].strip() == "{left}":
             css_class = ' class="left"'
