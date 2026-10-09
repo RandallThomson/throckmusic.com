@@ -46,3 +46,7 @@ Look for 2027 Shows here Soon!
 {event-past}
 [The Throckmorton Trio - 09/4/2026 - @The White Squirrel Bar](https://whitesquirrelbar.com/calendar/)
 <em>Stehpanie Was is at 6 PM followed by [The Throckmorton Trio](throckmorton-trio.html) at 7 PM (no cover and music until 1 PM after us) </em>
+
+{event-past}
+[Lambchop - 06/30/2026 - @Crooners](https://www.croonersmn.com)
+<em>I sing background vocals with the Lambchop</em>
