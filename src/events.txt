@@ -40,7 +40,7 @@ Look for 2027 Shows here Soon!
 <em>I sing background vocals with Lambchop at this show</em>
 
 {event-past}
-[Lambchop - 08/30/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-holiday-special-w-randall-throckmorton-special-guests)
+[Lambchop - 08/30/2026 - @Crooners](https://www.croonersmn.com/event/lambchop-holiday-special-w-randall-throckmorton-special-guests) <span class="sold-out">(sold out)</span>
 <em>[The Throckmorton Trio](throckmorton-trio.html) opens the show, then I sing background vocals with the Lambchop</em>
 
 {event-past}
